@@ -1,0 +1,33 @@
+{% extends "usuarios_base.html" %}
+{% block titulo %}Aplicacion Nombre Usuario{% endblock %}
+{% block contenido1%}Menu Principal de Webapp Nombre Usuario{%endblock%}
+
+{% block contenido2 %}
+   <div class = cuerpo>
+      <div class="coluna1">
+         <div><h1>Usuarios agregados</h1>  </div>
+         <div class="contenedor_tabla">
+            <table id="myTable">
+               <thead>
+                  <tr>
+                     <th>User Name</th>
+                     <th>email</th>
+                  </tr>
+               </thead>
+               <tbody>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class="coluna2">
+         <div><h1>Agregar Usuario</h1>  </div>
+            <div class="contenedor_formulario">
+                  <label for="username">Nombre del Usuario</label>
+                  <input type="text" name="username" id="username">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email">
+                  <button onclick="save_PostDict()">Agregar Usuario</button>
+            </div>
+      </div>
+   </div>
+{%endblock%}
